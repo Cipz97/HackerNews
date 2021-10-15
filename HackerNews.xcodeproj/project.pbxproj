@@ -11,6 +11,11 @@
 		B32623402719BCD900CA5974 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326233F2719BCD900CA5974 /* ContentView.swift */; };
 		B32623422719BCDC00CA5974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B32623412719BCDC00CA5974 /* Assets.xcassets */; };
 		B32623452719BCDC00CA5974 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B32623442719BCDC00CA5974 /* Preview Assets.xcassets */; };
+		B326234C2719C01300CA5974 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326234B2719C01300CA5974 /* NetworkManager.swift */; };
+		B326234E2719C08A00CA5974 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326234D2719C08A00CA5974 /* Constants.swift */; };
+		B32623502719C18B00CA5974 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326234F2719C18B00CA5974 /* PostData.swift */; };
+		B32623532719C62A00CA5974 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32623522719C62A00CA5974 /* DetailView.swift */; };
+		B32623552719CB6A00CA5974 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32623542719CB6A00CA5974 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		B326233F2719BCD900CA5974 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B32623412719BCDC00CA5974 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B32623442719BCDC00CA5974 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B326234B2719C01300CA5974 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B326234D2719C08A00CA5974 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B326234F2719C18B00CA5974 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		B32623522719C62A00CA5974 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		B32623542719CB6A00CA5974 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +61,13 @@
 		B326233C2719BCD900CA5974 /* HackerNews */ = {
 			isa = PBXGroup;
 			children = (
+				B326234B2719C01300CA5974 /* NetworkManager.swift */,
+				B326234F2719C18B00CA5974 /* PostData.swift */,
 				B326233D2719BCD900CA5974 /* HackerNewsApp.swift */,
-				B326233F2719BCD900CA5974 /* ContentView.swift */,
+				B32623512719C61300CA5974 /* Views */,
 				B32623412719BCDC00CA5974 /* Assets.xcassets */,
 				B32623432719BCDC00CA5974 /* Preview Content */,
+				B326234D2719C08A00CA5974 /* Constants.swift */,
 			);
 			path = HackerNews;
 			sourceTree = "<group>";
@@ -65,6 +78,16 @@
 				B32623442719BCDC00CA5974 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B32623512719C61300CA5974 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B326233F2719BCD900CA5974 /* ContentView.swift */,
+				B32623522719C62A00CA5974 /* DetailView.swift */,
+				B32623542719CB6A00CA5974 /* WebView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +160,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B32623502719C18B00CA5974 /* PostData.swift in Sources */,
+				B32623532719C62A00CA5974 /* DetailView.swift in Sources */,
+				B326234C2719C01300CA5974 /* NetworkManager.swift in Sources */,
 				B32623402719BCD900CA5974 /* ContentView.swift in Sources */,
 				B326233E2719BCD900CA5974 /* HackerNewsApp.swift in Sources */,
+				B326234E2719C08A00CA5974 /* Constants.swift in Sources */,
+				B32623552719CB6A00CA5974 /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
